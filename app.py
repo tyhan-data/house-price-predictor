@@ -22,9 +22,30 @@ st.markdown("""
         font-family: 'Inter', sans-serif;
     }
 
-    /* Background */
-    .main { background-color: #f0f4f8; }
-    .stApp { background: linear-gradient(135deg, #f0f4f8 0%, #e8edf5 100%); }
+     /* Background */
+    .main {
+      background-color: #f7f9fc;
+    }
+    .stApp {
+       background: linear-gradient(135deg, #f7f9fc 0%, #edf2f7 100%);
+
+    }
+    
+    /* Ensure all text is visible */
+    html, body, [class*="css"] {
+      color: #1f2937 !important;
+    }
+
+/* Streamlit markdown text */
+    p, h1, h2, h3, h4, h5, h6 {
+      color: #111827 !important;
+    }
+
+/* Sidebar text */
+    section[data-testid="stSidebar"] {
+      color: #111827 !important;
+    }
+
 
     /* Hero Header */
     .hero-header {
@@ -183,11 +204,13 @@ st.markdown("""
     /* Slider */
     .stSlider { padding: 0.5rem 0; }
 </style>
+
 <style>
 #MainMenu {
  visibility: visible !important;
 }
 </style>
+
 
 """, unsafe_allow_html=True)
 
