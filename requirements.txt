@@ -1,0 +1,17 @@
+# Web Framework for ML
+streamlit>=1.35.0
+
+# Data Manipulation & Analysis
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Machine Learning & Modeling
+scikit-learn>=1.4.0
+catboost>=1.2.0
+
+# Model Saving & Loading
+joblib>=1.3.0
