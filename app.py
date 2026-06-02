@@ -187,13 +187,11 @@ st.markdown("""
 
 
 # ─── Load Model ────────────────────────────────────────────────────────────────
+
 @st.cache_resource
 def load_model():
-    model_path = r"C:\data_science_project\House price prediction\model\cat_model.pkl"
-
-    with open(model_path, "rb") as f:
+    with open("model/cat_model.pkl", "rb") as f:
         model = pickle.load(f)
-
     return model
 
 model = load_model()
