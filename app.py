@@ -144,10 +144,10 @@ st.markdown("""
     }
 
     /* Hide default streamlit elements */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-
+     #MainMenu {display: none;}
+     footer { visibility: visible !important;}
+     header { visibility: visible !important;}
+     
     /* Sidebar styling */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
@@ -183,8 +183,13 @@ st.markdown("""
     /* Slider */
     .stSlider { padding: 0.5rem 0; }
 </style>
-""", unsafe_allow_html=True)
+<style>
+#MainMenu {
+ visibility: visible !important;
+}
+</style>
 
+""", unsafe_allow_html=True)
 
 # ─── Load Model ────────────────────────────────────────────────────────────────
 
